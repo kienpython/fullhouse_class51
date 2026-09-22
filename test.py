@@ -1,3 +1,2 @@
-from bai6_btvn import nhap_int_value
-
-nhap_int_value("Math")
+number = "15.4"
+print(int(number))
