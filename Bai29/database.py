@@ -2,7 +2,12 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-DATABASE_URL = "mysql+pymysql://root:Kientkls01@localhost:3306/bai2_database"
+from dotenv import load_dotenv
+
+load_dotenv()
+
+import os
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 engine = create_engine(DATABASE_URL)
 

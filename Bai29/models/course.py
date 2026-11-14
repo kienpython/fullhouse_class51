@@ -9,3 +9,4 @@ class Course(Base):
     is_published = Column(Boolean, default=False)
     created_at = Column(DateTime, server_default=func.now())
     students = relationship("Student", back_populates="course")
+    author = Column(String(120))
