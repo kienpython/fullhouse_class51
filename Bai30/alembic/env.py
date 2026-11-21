@@ -8,8 +8,8 @@ from alembic import context
 
 import os
 from dotenv import load_dotenv
-from Class_51.fullhouse_class51.Bai30.app.core.database import Base
-from Class_51.fullhouse_class51.Bai30.app.models.book import Book
+from app.core.database import Base
+from app.models.book import Book
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
